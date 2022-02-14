@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./weather.js"></script>
+    <title>Temperature Conversor</title>
+</head>
+<body>
+    <header>
+        <h1>
+            THIS MIGHT BE THE BEST TEMPERATURE CONVERSOR EVER MADE
+        </h1>
+        <H2>
+            You can convert temperature from Kelvin to:
+            <ul>
+                <li>Celsius</li>
+                <li>Fahrenheit</li>
+                <li>Newton</li>
+            </ul>
+        </H2>
+    </header>
+    <main>
+        <div>
+            <h4>Please insert a temperature number in Kelvin degrees to convert:</h4>
+            <input id="kelvin" type="number" name="Kelvin Temperature" label="Please insert a number">
+            <button id="giveCelsius" value="clickme" onclick="getCelsius();">Give me the temperature in Celsius</button>
+            <button id="giveFahrenheit" value="clickme" onclick="getFahrenheit();">Give me the temperature in Fahrenheit</button>
+            <button id="giveNewton" value="clickme" onclick="getNewton();">Give me the temperature in Newton</button>
+        </div>
+        <div id="div-result">
+            
+        </div>
+    </main>
+</body>
+</html>
